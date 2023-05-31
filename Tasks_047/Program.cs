@@ -7,6 +7,13 @@
 // 1 -3,3 8 -9,9
 // 8 7,8 -7,1 9
 
+void Main()
+{
+    double[,] matrix = FillMatrix(ReadInt("Enter number of rows: "), 
+                       ReadInt("Enter number of columns: "), -10, 10);
+    PrintMatrix(matrix);
+}
+
 int ReadInt(string text)
 {
     System.Console.Write(text);
@@ -41,5 +48,5 @@ void PrintMatrix(double[,] matrix)
     }
 }
 
-double[,] matrix = FillMatrix(ReadInt("Введите количество строк: "), ReadInt("Введите количество столбцов: "), -10, 10);
-PrintMatrix(matrix);
+Main();
+
